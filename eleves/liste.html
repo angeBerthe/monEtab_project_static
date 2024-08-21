@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lister-eleve</title>
+    <link rel="stylesheet" href="../css/eleves/listeEleve.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo">
+        <img src="../icons/login.png"  style="width: 50px;height: 50px;margin-right: 10px" alt="Mon Etab Logo">
+        <h2>Mon Etab</h2>
+    </div>
+    <ul class="menu">
+        <hr>
+        <li ><a href="../homePage.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
+            <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
+        </svg> Tableau de bord</a></li>
+        <li class="active"><a href="liste.html"><img src="../icons/eleve.png" style="width: 30px;height: 30px" alt=""> Élèves</a></li>
+        <li><a href="../professeurs/liste.html"><img src="../icons/professeur.png" style="width: 30px;height: 30px" alt=""> Professeurs</a></li>
+        <li><a href="../utilisateurs/liste.html"><img src="../icons/user.png" style="width: 30px;height: 30px" alt=""> Utilisateurs</a></li>
+        <li><a href="../rapport/rapport.html"><img src="../icons/rapport.png" style="width: 30px;height: 30px" alt=""> Rapport</a></li>
+    </ul>
+    <div class="logout">
+        <hr>
+        <img src="../icons/logout.png" style="width: 30px;height: 30px" alt=""> Déconnexion
+    </div>
+</div>
+
+<div class="main-content">
+    <main>
+        <header>
+            <h1>Élèves (2)</h1>
+            <button class="add-student"><img src="../icons/plus.png" style="width: 10px;height: 10px" alt=""> Nouvel élève</button>
+        </header>
+        <section class="table-section">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Genre</th>
+                    <th>Classe</th>
+                    <th>Matricule</th>
+                    <th>Age</th>
+                    <th>Téléphone</th>
+                    <th>Ville</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>KOFFI</td>
+                    <td>George</td>
+                    <td>M</td>
+                    <td>Tle</td>
+                    <td>GDJ7GDGD</td>
+                    <td>25</td>
+                    <td>0123456789</td>
+                    <td>Bonoua</td>
+                    <td>
+                        <button class="edit-btn">Modifier</button>
+                        <button class="delete-btn">Supprimer</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>KONÉ</td>
+                    <td>Sali</td>
+                    <td>F</td>
+                    <td>2nd</td>
+                    <td>GDJ7GDGD</td>
+                    <td>22</td>
+                    <td>0123456789</td>
+                    <td>Abidjan</td>
+                    <td>
+                        <button class="edit-btn">Modifier</button>
+                        <button class="delete-btn">Supprimer</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</div>
+<!-- Modal de confirmation -->
+<div id="confirmationModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>ATTENTION !!!</h2>
+        </div>
+        <div class="modal-body">
+            <p>Voulez-vous supprimer cet élève ?</p>
+        </div>
+        <div class="modal-footer">
+            <button id="confirmYes" class="modal-btn yes-btn">Oui</button>
+            <button id="confirmNo" class="modal-btn no-btn">Non</button>
+        </div>
+    </div>
+</div>
+
+<script src="../JavaScript/modal.js"></script>
+</body>
+</html>

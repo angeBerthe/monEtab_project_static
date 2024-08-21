@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier-Utilisateur</title>
+    <link rel="stylesheet" href="../css/utilisateurs/ajouterUtilisateur.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo">
+        <img src="../icons/login.png"  style="width: 50px;height: 50px;margin-right: 10px" alt="Mon Etab Logo">
+        <h2>Mon Etab</h2>
+    </div>
+    <ul class="menu">
+        <hr>
+        <li ><a href="../homePage.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
+            <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
+        </svg> Tableau de bord</a></li>
+        <li ><a href="../eleves/liste.html"><img src="../icons/eleve.png" style="width: 30px;height: 30px" alt=""> Élèves</a></li>
+        <li><a href="../professeurs/liste.html"><img src="../icons/professeur.png" style="width: 30px;height: 30px" alt=""> Professeurs</a></li>
+        <li class="active"><a href="liste.html"><img src="../icons/user.png" style="width: 30px;height: 30px" alt=""> Utilisateurs</a></li>
+        <li><a href="../rapport/rapport.html"><img src="../icons/rapport.png" style="width: 30px;height: 30px" alt=""> Rapport</a></li>
+    </ul>
+    <div class="logout">
+        <hr>
+        <img src="../icons/logout.png" style="width: 30px;height: 30px" alt=""> Déconnexion
+    </div>
+</div>
+
+<div class="main-content">
+    <main>
+        <div class="retour-container">
+            <a href="#" class="retour">← Retour</a>
+        </div>
+        <h2>Modifier l' utilisateur - 45678</h2>
+        <form id="addStudentForm">
+            <div class="form-row">
+                <input type="text" id="pseudo" placeholder="Pseudo" required>
+            </div>
+            <div class="form-row">
+                <input type="password" id="ancien mot de passe" placeholder="ancien mot de passe" required>
+            </div>
+            <div class="form-row">
+                <input type="password" id="Nouveau mot de passe" placeholder="Nouveau mot de passe" required>
+            </div>
+            <div class="form-row">
+                <input type="password" id="confirmer nouveau mot de passe" placeholder="Confirmer nouveau mot de passe" required>
+            </div>
+            <div class="form-row buttons">
+                <button type="button" class="btn-cancel">Annuler</button>
+                <button type="submit" class="btn-save">Enregistrer</button>
+            </div>
+        </form>
+    </main>
+</div>
+
+<script src="../JavaScript/homePage.js"></script>
+</body>
+</html>

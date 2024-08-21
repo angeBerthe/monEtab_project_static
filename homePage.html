@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de Bord - Mon Etab</title>
+  <link rel="stylesheet" href="css/homePage.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo">
+    <img src="icons/login.png"  style="width: 50px;height: 50px;margin-right: 10px" alt="Mon Etab Logo">
+    <h2>Mon Etab</h2>
+  </div>
+  <ul class="menu">
+    <li class="active"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
+      <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
+    </svg> Tableau de bord</li>
+    <li><img src="icons/eleve.png" style="width: 30px;height: 30px" alt=""> Élèves</li>
+    <li><img src="icons/professeur.png" style="width: 30px;height: 30px" alt=""> Professeurs</li>
+    <li><img src="icons/user.png" style="width: 30px;height: 30px" alt=""> Utilisateurs</li>
+    <li><img src="icons/rapport.png" style="width: 30px;height: 30px" alt=""> Rapport</li>
+  </ul>
+  <div class="logout">
+    <img src="icons/logout.png" style="width: 30px;height: 30px" alt=""> Déconnexion
+  </div>
+</div>
+
+<div class="main-content">
+  <h1>Tableau de bord</h1>
+  <div class="stats-grid">
+    <div class="stat-box">
+      <h3>Nombre d'élève</h3>
+      <p>128 100</p>
+    </div>
+    <div class="stat-box">
+      <h3>Nombre de professeur</h3>
+      <p>128 100</p>
+    </div>
+    <div class="stat-box">
+      <h3>Nombre d'utilisateur</h3>
+      <p>128 100</p>
+    </div>
+    <div class="stat-box">
+      <h3>Élève par genre</h3>
+      <div style="height: 200px;">
+        <canvas id="genderChart"></canvas>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="JavaScript/homePage.js"></script>
+</body>
+</html>
